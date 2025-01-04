@@ -1,0 +1,199 @@
+Date
+$ date
+Saturday 04 January 2025 11:33:48 AM IST
+$ date +%m
+01
+$ date +%s
+1735970680
+student@dl-2:~$ date +%y
+25
+student@dl-2:~$ date +%h
+Jan
+student@dl-2:~$ date +%d
+04
+student@dl-2:~$ date +%M
+35
+student@dl-2:~$ date +%H
+11
+
+Calendar
+student@dl-2:~$ cal
+    January 2025      
+Su Mo Tu We Th Fr Sa  
+          1  2  3  4  
+ 5  6  7  8  9 10 11  
+12 13 14 15 16 17 18  
+19 20 21 22 23 24 25  
+26 27 28 29 30 31
+
+Echo
+student@dl-2:~$ echo "Hello world"
+Hello world
+
+List
+student@dl-2:~$ ls
+Adwaidh_3  Desktop  Documents  Downloads  google-chrome-stable_current_amd64.deb  Jinendran  jinendran.sh  Jinu.sh  Music  mysql-apt-config_0.8.30-1_all.deb  os  Pictures  Public  snap  Templates  Videos
+student@dl-2:~$ ls -t
+jinendran.sh  Jinu.sh  Jinendran  Pictures  Adwaidh_3  os  Downloads  Desktop  Documents  Music  Public  Templates  Videos  snap  google-chrome-stable_current_amd64.deb  mysql-apt-config_0.8.30-1_all.deb
+student@dl-2:~$ ls -u
+Templates  Pictures  Videos  Documents  Music  Desktop  Downloads  jinendran.sh  snap  Jinu.sh  Public  Adwaidh_3  os  Jinendran  mysql-apt-config_0.8.30-1_all.deb  google-chrome-stable_current_amd64.deb
+student@dl-2:~$ ls -s
+total 108852
+     4 Adwaidh_3       4 Documents  108776 google-chrome-stable_current_amd64.deb       4 jinendran.sh       4 Music                                   4 os             4 Public       4 Templates
+     4 Desktop         4 Downloads       4 Jinendran                                    4 Jinu.sh           20 mysql-apt-config_0.8.30-1_all.deb       4 Pictures       4 snap         4 Videos
+student@dl-2:~$ ls -r
+Videos  Templates  snap  Public  Pictures  os  mysql-apt-config_0.8.30-1_all.deb  Music  Jinu.sh  jinendran.sh  Jinendran  google-chrome-stable_current_amd64.deb  Downloads  Documents  Desktop  Adwaidh_3
+student@dl-2:~$ ls -f
+.cache  Jinendran  .bash_history   Downloads  ..         .gnupg  google-chrome-stable_current_amd64.deb  .sudo_as_admin_successful  .bash_logout  Desktop                            .bashrc
+.ssh    .pki       .mysql_history  .lesshst   .java      snap    jinendran.sh                            Videos                     .profile      mysql-apt-config_0.8.30-1_all.deb  Jinu.sh
+os      .config    Public          Documents  Templates  Music   .local                                  Pictures                   .             Adwaidh_3
+student@dl-2:~$ ls -s
+total 108852
+     4 Adwaidh_3       4 Documents  108776 google-chrome-stable_current_amd64.deb       4 jinendran.sh       4 Music                                   4 os             4 Public       4 Templates
+     4 Desktop         4 Downloads       4 Jinendran                                    4 Jinu.sh           20 mysql-apt-config_0.8.30-1_all.deb       4 Pictures       4 snap         4 Videos
+student@dl-2:~$ ls -h
+Adwaidh_3  Desktop  Documents  Downloads  google-chrome-stable_current_amd64.deb  Jinendran  jinendran.sh  Jinu.sh  Music  mysql-apt-config_0.8.30-1_all.deb  os  Pictures  Public  snap  Templates  Videos
+student@dl-2:~$ ls -i
+6697728 Adwaidh_3  6684764 Documents  6685747 google-chrome-stable_current_amd64.deb  6707836 jinendran.sh  6684765 Music                              6689476 os        6684763 Public  6684762 Templates
+6684759 Desktop    6684761 Downloads  6694578 Jinendran                               6694524 Jinu.sh       6687608 mysql-apt-config_0.8.30-1_all.deb  6684766 Pictures  6684678 snap    6684767 Videos
+student@dl-2:~$ ls [a-m]*
+google-chrome-stable_current_amd64.deb  jinendran.sh  mysql-apt-config_0.8.30-1_all.deb
+
+student@dl-2:~$ lp jinendran.sh
+lp: Error - No default destination.
+
+
+student@dl-2:~$ who$whoami
+student  tty2         2025-01-04 15:24 (tty2)
+
+student@dl-2:~$ uptime
+ 11:45:19 up  1:51,  1 user,  load average: 0.35, 0.28, 0.20
+
+student@dl-2:~$ uname -a
+Linux dl-2 6.8.0-49-generic #49~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Nov  6 17:42:15 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+
+student@dl-2:~$ hostname
+dl-2
+
+student@dl-2:~$ bc
+bc 1.07.1
+Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006, 2008, 2012-2017 Free Software Foundation, Inc.
+This is free software with ABSOLUTELY NO WARRANTY.
+For details type `warranty'.
+5+7
+12
+12*45
+540
+^Z
+[7]+  Stopped                 bc
+
+cat jinendran.sh
+abcdfeghijklmnopqrstuvwxyz
+echo "Hello world"
+echo "Say something:"
+read n
+echo "$n"
+fg
+df
+cd
+if
+then
+fi
+
+student@dl-2:~$ cat jinendran.sh Jinu.sh &gt Jinu.sh
+[9] 6694
+abcdfeghijklmnopqrstuvwxyz
+echo "Hello world"
+echo "Say something:"
+read n
+echo "$n"
+fg
+df
+cd
+if
+then
+fi
+abcdfeghijklmnopqrstuvwxyz
+grrgvfdgdrht
+dfshgtjtfsrf
+fg
+df
+
+student@dl-2:~$ grep cd Jinu.sh
+abcdfeghijklmnopqrstuvwxyz
+student@dl-2:~$ rm jinendran.sh
+student@dl-2:~$ cat jinendran.sh
+cat: jinendran.sh: No such file or directory
+student@dl-2:~$ touch jinendran.sh
+student@dl-2:~$ cp Jinu.sh jinendran.sh
+student@dl-2:~$ cat jinendran.sh
+abcdfeghijklmnopqrstuvwxyz
+grrgvfdgdrht
+dfshgtjtfsrf
+fg
+df
+
+student@dl-2:~$ mv jinendran.sh Jinendran.sh
+student@dl-2:~$ cat Jinendran.sh
+abcdfeghijklmnopqrstuvwxyz
+grrgvfdgdrht
+dfshgtjtfsrf
+fg
+df
+
+student@dl-2:~$ cut -c -10 Jinendran.sh
+abcdfeghij
+grrgvfdgdr
+dfshgtjtfs
+fg
+df
+
+student@dl-2:~$ head Jinendran.sh
+abcdfeghijklmnopqrstuvwxyz
+grrgvfdgdrht
+dfshgtjtfsrf
+fg
+df
+abcd
+echo "Hi"
+echo "Hello"
+read n
+echo "$n"
+
+student@dl-2:~$ head -2 Jinendran.sh
+abcdfeghijklmnopqrstuvwxyz
+grrgvfdgdrht
+
+chmod -rx jinendran.sh
+cat jinendran.sh
+cat: jinendran.sh: Permission denied
+
+student@dl-2:~$ tail Jinendran.sh
+dfshgtjtfsrf
+fg
+df
+abcd
+echo "Hi"
+echo "Hello"
+read n
+echo "$n"
+echo "Bye"
+
+student@dl-2:~$ tail -2 Jinendran.sh
+echo "Bye"
+
+student@dl-2:~$ chmod u-wx Jinendran.sh
+student@dl-2:~$ cp Jinu.sh Jinendran.sh
+cp: cannot create regular file 'Jinendran.sh': Permission denied
+
+student@dl-2:~$ chmod +wx Jinendran.sh
+student@dl-2:~$ cp Jinu.sh Jinendran.sh
+
+chmod g=rwx jinendran.sh
+
+student@dl-2:~$ wc -l Jinendran.sh
+5 Jinendran.sh
+student@dl-2:~$ wc -w Jinendran.sh
+5 Jinendran.sh
+student@dl-2:~$ wc -c Jinendran.sh
+59 Jinendran.sh
